@@ -33,7 +33,7 @@ public class Pizza {
         cheesPrice = 80;
         bagPrice = 20;
         totalPrice = basePrice;
-        bill = "Base Price of the Pizza: "+basePrice +"/n";
+        bill = "Base Price of the Pizza: "+basePrice +"\n";
     }
 
     public int getPrice(){
@@ -46,7 +46,7 @@ public class Pizza {
             totalPrice += cheesPrice;
             isCheesAdded = true;
 
-            bill = bill + "Extra Cheese Added: " + cheesPrice;
+            bill = bill + "Extra Cheese Added: " + cheesPrice+ "\n";
         }
     }
 
@@ -55,7 +55,7 @@ public class Pizza {
         if(isToppingsAdded == false){
             totalPrice += toppingsPrice;
             isToppingsAdded = true;
-            bill = bill + "Extra Toppings Added: "+toppingsPrice;
+            bill = bill + "Extra Toppings Added: "+toppingsPrice + "\n";
         }
     }
 
@@ -64,7 +64,7 @@ public class Pizza {
         if(isBagPriceAdded == false){
             totalPrice += bagPrice;
             isBagPriceAdded = true;
-            bill = bill + "Paperbag Added: "+bagPrice;
+            bill = bill + "Paperbag Added: "+bagPrice + "\n";
         }
     }
 
@@ -72,7 +72,7 @@ public class Pizza {
         // your code goes here
 
         if(isBillGenerated == false) {
-            bill = bill + "Total Price: "+totalPrice;
+            bill = bill + "Total Price: "+totalPrice + "\n";
         }
         return this.bill;
     }
